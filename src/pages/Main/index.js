@@ -15,12 +15,14 @@ import {
 } from './styles';
 import Header from '~/components/Header';
 import Tabs from '~/components/Tabs';
+import Menu from '~/components/Menu';
 
 export default function Main() {
   return (
     <Container>
       <Header />
       <Content>
+        <Menu />
         <Card>
           <CardHeader>
             <Icon name="attach-money" size={28} color="#666" />
