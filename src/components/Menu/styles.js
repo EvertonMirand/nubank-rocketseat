@@ -1,18 +1,15 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Animated } from 'react-native';
 
 import styled from 'styled-components/native';
 
-export const Container = styled.ScrollView.attrs({
-  contentContainerStyle: {
-    alignItems: 'center',
-  },
-})`
+export const Container = styled(Animated.ScrollView)`
   margin: 0 30px;
 `;
 
 export const Code = styled.View`
   background: #fff;
   padding: 10px;
+  align-items: center;
   overflow: hidden;
 `;
 
